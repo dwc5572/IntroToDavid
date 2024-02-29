@@ -1,10 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
 
-</body>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Links</title>
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/styles/styles.css">
+  </head>
+  <body>
+    <header> <img src="resources/images/logo.jpeg" alt="Logo">
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a class="nav-link active"
+              href="index.html"> HomePage</a></li>
+          <li class="nav-item"><a class="nav-link active"
+              href="education.html"> Education</a></li>
+          <li class="nav-item"><a class="nav-link active"
+              href="resume.html"> Resume</a></li>
+          <li class="nav-item"><a class="nav-link active"
+              href="workExperience.html"> Work Experience</a></li>
+          <li class="nav-item"><a class="nav-link active"
+              href="weblinks.html"> Web Links</a></li>
+          <li class="nav-item"><a class="nav-link active"
+              href="album.html"> Photo Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br>
+    <div class="content">
+      <div class="sidebar">
+        <h2>Contact me</h2>
+        <form id="fs-frm" name="simple-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/mbjnyagd" method="post">
+          <fieldset id="fs-frm-inputs">
+            <div class="form-group"> <label for="full-name">Full Name</label>
+              <input class="form-control" name="name" id="full-name"
+                placeholder="First and Last" required="" type="text"> </div>
+            <div class="form-group"> <label for="email-address">Email
+                Address</label> <input class="form-control"
+                name="_replyto" id="email-address"
+                placeholder="sample@email.com" required="" type="email">
+            </div>
+            <div class="form-group"> <label for="message">Message</label>
+              <textarea class="form-control" rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+            </div>
+            <input name="_subject" id="email-subject" value="Contact
+              Form Submission" type="hidden"> </fieldset>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <div id="apiDisplay"> </div>
+        <script>
+            const div= document.getElementById('apiDisplay');
+            const url='https://api.kanye.rest/';
+            const headers = new Headers(
+                {
+                    'Accept': 'application/json'
+                }
+            )
+            fetch(url, {headers}).then((response) => {return response.json();
+            })
+                .then((data) => {console.log(data);
+                    let p= document.createElement('p');
+                    p.innerHTML=`${data.quote}`;
+                    div.appendChild(p);
+
+                })
+                .catch(function (error)
+                {
+                    console.log(error);
+                })
+        </script> <br>
+        <p>-Kanye West</p>
+      </div>
+      <div class="displayContent">
+        <h1>Links That I Often Use/Find Useful</h1>
+        <br>
+        <br>
+        <h5><a moz-do-not-send="true" href="https://lichess.org/">Lichess</a>:
+          A chess website that allows you to practice against real
+          players and bots</h5>
+        <br>
+        <br>
+        <h5><a moz-do-not-send="true" href="https://chat.openai.com/">ChatGPT</a>:
+          While this website is often not allowed on assignments it can
+          still be utilized for brainstorming</h5>
+        <br>
+        <br>
+        <h5><a moz-do-not-send="true" href="https://zbib.org/">ZoteroBib</a>:
+          Easy website for formally citing a source in any format</h5>
+        <br>
+        <br>
+        <h5><a moz-do-not-send="true" href="https://libgenesis.net/">LibGen</a>:
+          A website which has free pdfs for many textbooks (saves lots
+          of money)</h5>
+        <br>
+        <br>
+        <h5><a moz-do-not-send="true" href="https://www.espn.com/">ESPN</a>:
+          A website which has up-to-date news on sports every minute</h5>
+        <br>
+        <br>
+        <h5><a moz-do-not-send="true" href="https://www.nytimes.com/crosswords">NYT Daily Puzzles</a>:
+          Brain teaser's that help to keep yourself entertained/ mentally stimulated</h5>
+      </div>
+    </div>
+    <footer>
+      <p>David Connolly <br>
+        davidwc5572@gmail.com <br>
+        215-668-0498 <br>
+        221 Acoma Lane Collegeville, PA 19426</p>
+      <a href="https://www.linkedin.com/in/david-w-connolly/"> My
+        LinkedIn</a> <a href="https://github.com/dwc5572"> My Github</a>
+      <p>© Copyright 2024</p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,19 @@
+[
+  {
+    "title": "With My Awesome GF",
+    "description": "Photo taken with sasha at Senior Prom",
+    "photo": "resources/images/promPhoto"
+  }
+  ,
+  {
+    "title": "Dogs after a long day",
+    "description": "About 6 years ago this photo was taken in my kitchen",
+    "photo": "resources/images/dogPhoto.jpeg"
+  }
+  ,
+  {
+    "title": "Family",
+    "description": "Photo taken at my graduation",
+    "photo": "resources/images/gradPhoto.jpeg"
+  }
+]

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Album</title>
+    <title>Education</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="resources/styles/styles.css">
 </head>
@@ -72,54 +72,26 @@
         <p>-Kanye West</p>
     </div>
     <div class="displayContent">
-        <table id="galleryTable">
-            <tr>
-                <th>Title</th>
-                <th>Photo</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>With My Awesome GF</td>
-                <td><img src="resources/images/promPhoto.jpeg" alt="Prom Pic" width="300px"></td>
-                <td>Photo taken with sasha at Senior Prom</td>
-            </tr>
-            <tr>
-                <td>Dogs After a Long Day</td>
-                <td><img src="resources/images/dogPhoto.jpeg" alt="sleepy pups" width="300px"></td>
-                <td>About 6 years ago this photo was taken in my kitchen</td>
-            </tr>
-            <tr>
-                <td>Family Together</td>
-                <td><img src="resources/images/gradPhoto.jpeg" alt="My graduation" width="300px"></td>
-                <td>Photo taken at my graduation</td>
-            </tr>
-        </table>
-        <!--<script>
-            const table = document.getElementById('galleryTable');
-            const pathToJSON = 'resources/api/data.json';
-            fetch(pathToJSON)
-                .then((response) => {
-                    return response.json();
-                })
-                .then((data) => {
-                    console.log(data);
-                    data.forEach((item) => {
-                        const row= table.insertRow();
-                        const cell1 = row.insertCell(0)
-                        const cell2 = row.insertCell(1)
-                        const cell3 = row.insertCell(2)
+        <h1>My Education so Far</h1>
+        <br>
+        <br>
+        <h3>SpringFord Area School District:</h3>
+        <img src="SFLogo.jpeg" alt=" Spring Ford Logo">
+        <br>
+        <h5>Attended from grades K-7</h5>
+        <br>
+        <br>
+        <h3>The William Penn Charter School:</h3>
+        <img src="PennCharterLogo.png" alt="PC Logo">
+        <br>
+        <h5>Attended from grades 8-12 and graduated</h5>
+        <br>
+        <br>
+        <h3>Pennsylvania State University:</h3>
+        <img src="psuLogo.png"  alt="psu logo">
+        <br>
+        <h5>Currently completing my sophomore year of my Bachelor's degree in Enterprise Technology Integration</h5>
 
-                        cell1.innerHTML= '<img src=${item.photo} alt={Title}>'
-                        cell2.innerHTML= '<h3>${item.title}</h3>'
-                        cell3.innerHTML='<h3>${item.description}</h3>'
-                    })
-
-                })
-                .catch(function (error)
-                {
-                    console.log(error);
-                })
-        </script>-->
     </div>
 </div>
 
